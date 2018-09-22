@@ -74,7 +74,7 @@ const MobbingArbeid = () => (
             <InputLabel htmlFor="problem">Kostnadsramme</InputLabel>
           </Grid>
           <Grid item xs={10}>
-            1000 - 10000
+            1000 kr - 10000 kr
         </Grid>
         </Grid>
 
@@ -129,7 +129,7 @@ const MobbingArbeid = () => (
       <Grid item xs={12}>
         <Card className="card-container">
           <Typography className="card-title" color="textSecondary">
-            <p>Sommerfest 20. juni 2018</p>
+            <p>Våre møterom er ikke tilrettelagt for rullestolbrukere</p>
           </Typography>
           <Typography className="card-text" color="textSecondary">
             <Link to="/sak/sak23485">Se beskrivelse av sak</Link>
@@ -139,7 +139,7 @@ const MobbingArbeid = () => (
       <Grid item xs={12}>
         <Card className="card-container">
           <Typography className="card-title" color="textSecondary">
-            <p>Overgrepsfestivalen 10. mai 2000</p>
+            <p>Mannen fikk jobben</p>
           </Typography>
           <Typography className="card-text" color="textSecondary">
             <Link to="/">Se beskrivelse av sak</Link>
@@ -162,7 +162,7 @@ const MobbingArbeid = () => (
                   </Grid>
                   <Grid item xs={10}>
                     <div><strong>Ansvarlig for Diskriminering</strong></div>
-                    <div>Navn: Donald Duck</div>
+                    <div>Navn: Peter Hauglie</div>
                     <div>Kompetanseområde: Diskriminering, Diskriminering på arbiedsplassen</div>
                   </Grid>
                 </Grid>

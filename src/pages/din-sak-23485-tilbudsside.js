@@ -49,25 +49,34 @@ class DinSakPage extends React.Component {
                     <Grid alignContent='center' justify="center" item xs={6}>
                         <h2 style={style.title}>Tilbud</h2>
                         <Paper style={style.paper}>
-                            <h2>Tilbud fra Jurist Juristesen</h2>
+                            <h2>Tilbud fra Frank Ola Nilsen</h2>
                             <Grid direction="row">
                                 <p>
                                     Hei, jeg ønsker å ta din sak. Jeg har mye erfaring med saker som dette fra tidligere.
                                 </p>
-                                <Button variant="contained" color="primary">Godta tilbud</Button>
+                                <p>
+                                    Pris: 12500 kr
+                                </p>
+                                <Link to="/sak23485-prosjektrom/"><Button variant="contained" color="primary">Godta tilbud</Button></Link>
                             </Grid>
                         </Paper>
                         <Paper style={style.paper}>
-                            <h2>Tilbud fra Justisia Juss</h2>
+                            <h2>Tilbud fra Jan Berntsen</h2>
                             <p>
                                 Dette er et fagfelt som jeg brenner for og jeg ønsker derfor å gi deg et ekstra godt tilbud!
+                            </p>
+                            <p>
+                               Pris: 20000 kr
                             </p>
                             <Button variant="contained" color="primary">Godta tilbud</Button>
                         </Paper>
                         <Paper style={style.paper}>
-                            <h2>Tilbud fra Domrian Dommsen</h2>
+                            <h2>Tilbud fra Peter Hauglie</h2>
                             <p>
                                 Heisann. Jeg har lest igjennom saken din og ønsker å gi deg et tilbud.
+                            </p>
+                            <p>
+                               Pris: 14000 kr
                             </p>
                             <Button variant="contained" color="primary">Godta tilbud</Button>
                         </Paper>

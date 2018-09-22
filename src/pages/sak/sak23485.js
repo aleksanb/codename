@@ -9,10 +9,6 @@ const Mobbedommen = () => (
         <Grid container className="container" spacing={24}>
             <Grid item xs={12}>
                 <Link to="/">Hjem </Link> 
-                <i class="fas fa-arrow-right"></i>
-                <Link to="/diskriminering-og-mobbing/"> Diskriminering og mobbing </Link>
-                <i class="fas fa-arrow-right"></i>
-                <Link to="/diskriminering-og-mobbing/diskriminering-paa-arbiedsplassen/"> Diskriminering på arbiedsplassen</Link>
             </Grid>
             <Grid item xs={12}>
                 <h1>Sommerfest 20. juni 2018</h1>
@@ -36,6 +32,11 @@ const Mobbedommen = () => (
                 <h3>
                     Denne saken ble løst av Jurist Vroldal.
                 </h3>
+
+                <h4>
+                    Prisen kom på: 18000 kr
+                </h4>
+
                 <p>
                     Se Vrodals profil <Link to="/sak/sak23485">her</Link>
                 </p>
