@@ -161,7 +161,7 @@ const MobbingArbeid = () => (
                     <i class="fas fa-4x fa-user"></i>
                   </Grid>
                   <Grid item xs={10}>
-                    <div><strong>Ansvarlig for Diskriminering</strong></div>
+                    <div><strong>Saksansvarlig</strong></div>
                     <div>Navn: Peter Hauglie</div>
                     <div>Kompetanseområde: Diskriminering, Diskriminering på arbiedsplassen</div>
                   </Grid>
