@@ -1,9 +1,25 @@
 import React from 'react'
-import { Link } from 'gatsby'
-
 import Layout from '../components/layout'
+import { createMuiTheme, MuiThemeProvider,} from '@material-ui/core/styles'
+
+const muiTheme = createMuiTheme({
+    palette: {
+        primary1Color: '#22647D',
+    },
+    appBar: {
+        height: 57,
+    },
+    drawer: {
+        width: 230,
+        color: '#1a4d60',
+    },
+    raisedButton: {
+        primaryColor: '#e64b89',
+    },
+});
 
 const IndexPage = () => (
+    <MuiThemeProvider theme={muiTheme}>
   <Layout>
     <div className="jumbotron">
       <div className="row search-box">
@@ -49,6 +65,7 @@ const IndexPage = () => (
       </div>
     </div>
   </Layout>
+    </MuiThemeProvider>
 )
 
 export default IndexPage
