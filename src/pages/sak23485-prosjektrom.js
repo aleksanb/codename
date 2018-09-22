@@ -18,6 +18,14 @@ const style = {
     },
     title: {
         textAlign: 'center',
+        paddingBottom: '-10em',
+    },
+    paper:{
+        padding: '2em',
+        margin: '1em',
+    },
+    container: {
+        paddingTop: '-5em',
     }
 };
 
@@ -58,54 +66,68 @@ class DinSakPage extends React.Component {
 
         return (
             <Layout>
-                <Grid container className="container" justify="center" spacing={24} direction="row">
+                <Grid container className="container" justify="center" spacing={0} direction="row">
                     <Grid item xs={10}>
                         <Link to="/">Hjem </Link>
                         <i className="fas fa-arrow-right"></i>
                         <Link to="/sak23485-prosjektrom/"> Prosjektrom sak 23485</Link>
                     </Grid>
                     <Grid item xs={12}>
-
-                    <h2 style={style.title}>Prosjekt 23485</h2>
+                        <h2 style={style.title}>Prosjekt 23485</h2>
                     </Grid>
-                    <Grid container className="container" justify="center" spacing={24} direction="column">
-                        {/*<Grid container className="container" direction="row" xs={10}>*/}
-                            <Grid item xs={12}>
-                                <h2>Oppgaveliste</h2>
-                                <List>
-                                    {[0, 1, 2, 3].map(value => (
-                                        <ListItem key={value} dense button className={classes.listItem}>
-                                            <ListItemText primary={`${this.state.tasks[value + 1]}`} />
-                                            <ListItemSecondaryAction>
-                                                <Checkbox
-                                                    onChange={this.handleToggle(value)}
-                                                    checked={this.state.taskschecked.indexOf(value) !== -1}
-                                                />
-                                            </ListItemSecondaryAction>
-                                        </ListItem>
-                                    ))}
-                                </List>
+                    <Grid item xs={12}>
+                        <Grid container className="container" justify="center" spacing={0} direction="column" style={style.container}>
+                            <Grid item xs={6}>
+                                <Grid container className="container" spacing={0} direction="row">
+                                    <Grid item xs={12}>
+                                        <Paper style={style.paper}>
+                                            <h2>Oppgaveliste</h2>
+                                            <List>
+                                                {[0, 1, 2, 3].map(value => (
+                                                    <ListItem key={value} dense button className={classes.listItem}>
+                                                        <ListItemText primary={`${this.state.tasks[value + 1]}`} />
+                                                        <ListItemSecondaryAction>
+                                                            <Checkbox
+                                                                onChange={this.handleToggle(value)}
+                                                                checked={this.state.taskschecked.indexOf(value) !== -1}
+                                                            />
+                                                        </ListItemSecondaryAction>
+                                                    </ListItem>
+                                                ))}
+                                            </List>
+                                        </Paper>
+                                        <Paper style={style.paper}>
+                                        <h2>Dokumenter</h2>
+                                        <List>
+                                            {[0, 1, 2].map(value => (
+                                                <ListItem key={value} dense button className={classes.listItem}>
+                                                    <ListItemText primary={`${this.state.documents[value + 1]}`}/>
+                                                    <ListItemSecondaryAction>
+                                                        <Checkbox
+                                                            onChange={this.handleToggle(value)}
+                                                            checked={this.state.docschecked.indexOf(value) !== -1}
+                                                        />
+                                                    </ListItemSecondaryAction>
+                                                </ListItem>
+                                            ))}
+                                        </List>
+                                        </Paper>
+                                    </Grid>
+                                </Grid>
                             </Grid>
-                            <Grid item xs={12}>
-                                <h2>Dokumenter</h2>
-                                <List>
-                                    {[0, 1, 2].map(value => (
-                                        <ListItem key={value} dense button className={classes.listItem}>
-                                            <ListItemText primary={`${this.state.documents[value + 1]}`}/>
-                                            <ListItemSecondaryAction>
-                                                <Checkbox
-                                                    onChange={this.handleToggle(value)}
-                                                    checked={this.state.docschecked.indexOf(value) !== -1}
-                                                />
-                                            </ListItemSecondaryAction>
-                                        </ListItem>
-                                    ))}
-                                </List>
+                            <Grid item xs={4}>
+                                {/*<Grid container className="container" direction="row" >*/}
+                                    {/*<Paper> Chat med advokat... </Paper>*/}
+                                    {/*<Paper> Chat med advokat... </Paper>*/}
+                                    {/*<Paper> Chat med advokat... </Paper>*/}
+                                    {/*<Paper> Chat med advokat... </Paper>*/}
+                                    {/*<Paper> Chat med advokat... </Paper>*/}
+                                    {/*<Paper> Chat med advokat... </Paper>*/}
+                                    {/*<Paper> Chat med advokat... </Paper>*/}
+                                    {/*<Paper> Chat med advokat... </Paper>*/}
+                                {/*</Grid>*/}
                             </Grid>
-                        {/*</Grid>*/}
-                        {/*<Grid item xs={2}>*/}
-                            {/*<Paper> Chat med advokat </Paper>*/}
-                        {/*</Grid>*/}
+                        </Grid>
                     </Grid>
                 </Grid>
             </Layout>)
