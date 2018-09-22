@@ -26,7 +26,7 @@ class DinSakPage extends React.Component {
                     <Grid item xs={12}>
                         <Link to="/">Hjem </Link>
                         <i class="fas fa-arrow-right"></i>
-                        <Link to="/juristregistrering/"> Din sak 23485</Link>
+                        <Link to="/din-sak-23485/"> Din sak 23485</Link>
                     </Grid>
                     <Grid alignItems="center" justify="center" item xs={6}>
                         <h2 style={style.title}>Din sak 23485</h2>
