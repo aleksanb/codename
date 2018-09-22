@@ -57,7 +57,7 @@ class DinSakPage extends React.Component {
                                 <p>
                                     Pris: 12500 kr
                                 </p>
-                                <Link to="/sak23485-prosjektrom/"><Button variant="contained" color="primary">Godta tilbud</Button></Link>
+                                <Link to="/sak23485-prosjektrom/"><Button variant="contained" color="primary">Se tilbud</Button></Link>
                             </Grid>
                         </Paper>
                         <Paper style={style.paper}>
@@ -68,7 +68,7 @@ class DinSakPage extends React.Component {
                             <p>
                                Pris: 20000 kr
                             </p>
-                            <Button variant="contained" color="primary">Godta tilbud</Button>
+                            <Button variant="contained" color="primary">Se tilbud</Button>
                         </Paper>
                         <Paper style={style.paper}>
                             <h2>Tilbud fra Peter Hauglie</h2>
@@ -78,7 +78,7 @@ class DinSakPage extends React.Component {
                             <p>
                                Pris: 14000 kr
                             </p>
-                            <Button variant="contained" color="primary">Godta tilbud</Button>
+                            <Button variant="contained" color="primary">Se tilbud</Button>
                         </Paper>
                     </Grid>
 

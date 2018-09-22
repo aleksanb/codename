@@ -20,7 +20,7 @@ const style = {
         textAlign: 'center',
         paddingBottom: '-10em',
     },
-    paper:{
+    paper: {
         padding: '2em',
         margin: '1em',
     },
@@ -51,7 +51,7 @@ const styles = theme => ({
 
 class DinSakPage extends React.Component {
     state = {
-        taskschecked: [1,3],
+        taskschecked: [1, 3],
         docschecked: [1],
         tasks: ["Konsultasjon", "Korrespondanse med motparten", "Rettskildesøk", "Korrespondanse med arbeidsgiver", "Tilbakemelding", "Oppfølgningssamtale"],
         documents: ["Tekstmeldinger til og fra sjefen", "Referat av samtaler", "Liste på eventuelle vitner"],
@@ -111,7 +111,7 @@ class DinSakPage extends React.Component {
                                 <List>
                                     {[0, 1, 2].map(value => (
                                         <ListItem key={value} dense button className={classes.listItem}>
-                                            <ListItemText primary={`${this.state.documents[value]}`}/>
+                                            <ListItemText primary={`${this.state.documents[value]}`} />
                                             <ListItemSecondaryAction>
                                                 <Checkbox
                                                     onChange={this.handleToggle(value)}
@@ -125,36 +125,34 @@ class DinSakPage extends React.Component {
                         </Grid>
                         <Grid item xs={4}>
                             <Grid container className="container" direction="row" >
-                                <h2>Din chat med Per</h2>
-                                <div>
-                                    <Chip style={style.chipright} label="Hei Per! Takk for at du tar saken min:)"/></div>
-                                <div>
-                                    <Chip style={style.chipleft} label="Hei:) Bare hyggelig, glad jeg kan hjelpe"/></div>
-                                <div>
-                                    <Chip style={style.chipleft} label={"Har du mulighet til å laste opp en liste over eventuelle vitner?"}/></div>
-                                <div>
-                                    <Chip style={style.chipright} label="Ja, det kan jeg fikse!"/></div>
-                                <div style={style.div}>
-                                    <Chip style={style.chipright} label="Sånn, da er den lastet opp"/></div>
-                                <div>
-                                    <Chip style={style.chipleft} label="Supert!"/></div>
+                                <Grid item xs={12}>
+                                    <h2>Din chat med Frank</h2>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <div><Chip style={style.chipright} label="Hei Frank! Takk for at du tar saken min:)" /></div>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <div><Chip style={style.chipleft} label="Hei:) Bare hyggelig, glad jeg kan hjelpe" /></div>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <div><Chip style={style.chipleft} label={"Har du mulighet til å laste opp en liste over eventuelle vitner?"} /></div>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <div><Chip style={style.chipright} label="Ja, det kan jeg fikse!" /></div>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <div><Chip style={style.chipright} label="Sånn, da er den lastet opp" /></div>
+                                </Grid>
+                                <Grid item xs={12}>
+                                    <div><Chip style={style.chipleft} label="Supert!" /></div>
+                                </Grid>
                             </Grid>
                         </Grid>
                     </Grid>
-
-                    <Grid item xs={12}>
-                        {/*<Grid container className="container" justify="center" spacing={0} direction="column" style={style.container}>*/}
-                                <Grid item xs={6} container className="container" spacing={0} direction="row">
-                                    <Grid item xs={12}>
-
-                                    </Grid>
-                                </Grid>
-
-                        {/*</Grid>*/}
-                    </Grid>
                 </Grid>
             </Layout>)
-}    }
+    }
+}
 
 DinSakPage.propTypes = {
     classes: PropTypes.object.isRequired,

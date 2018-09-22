@@ -30,7 +30,7 @@ const IndexPage = () => (
       <Grid item xs={6}>
         <Card className="card-container">
           <Typography className="card-title" color="textSecondary">
-            <p>Naboen felte treet som jeg mener er på min eiendom</p>
+            <p>Sommerfesten 20. juni 2018</p>
           </Typography>
           <Typography className="card-text" color="textSecondary">
             <Link to="/sak/sak23485">Se beskrivelse av sak</Link>
