@@ -1,16 +1,44 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: pink;
+  text-decoration: none;
+}
+
+.container {
+  margin: 2em 3em;
+  padding: 2em;
+}
+
+.card-container {
+  text-align: center;
+  font-size: 24px !important;
+  margin: 5px 2em;
+}
+
+.card-title {
+  margin: 1em;
+  width: 100%;
+}
+
+.card-text {
+  margin: 1em;
+  width: 100%;
+}
+
+.card-icons {
+  font-size: 24;
+  padding: 0em;
+}
+
 .search-box {
   padding: 4em;
 }
 
 .search-box input {
-  padding: 2em;
-}
-
-.main-icons {
   padding: 1em;
-  font-size: 24px;
-}
-
-.main-category {
-  font-size: 24px;
+  background-color: white;
 }

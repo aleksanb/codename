@@ -1,71 +1,158 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import { createMuiTheme, MuiThemeProvider,} from '@material-ui/core/styles'
+import { createMuiTheme, MuiThemeProvider, } from '@material-ui/core/styles'
+import TextField from '@material-ui/core/TextField';
+import Card from '@material-ui/core/Card';
+import CardContent from '@material-ui/core/CardContent';
+import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 
 const muiTheme = createMuiTheme({
-    palette: {
-        primary1Color: '#22647D',
-    },
-    appBar: {
-        height: 57,
-    },
-    drawer: {
-        width: 230,
-        color: '#1a4d60',
-    },
-    raisedButton: {
-        primaryColor: '#e64b89',
-    },
+  palette: {
+    primary1Color: '#22647D',
+  },
+  appBar: {
+    height: 57,
+  },
+  drawer: {
+    width: 230,
+    color: '#1a4d60',
+  },
+  raisedButton: {
+    primaryColor: '#e64b89',
+  },
 });
 
 const IndexPage = () => (
-    <MuiThemeProvider theme={muiTheme}>
-  <Layout>
-    <div className="jumbotron">
-      <div className="row search-box">
-        <div className="form-group">
-          <div className="col-12">
-            <input type="search" class="form-control" id="searchBox" placeholder="Fritt søk" />
+  <MuiThemeProvider theme={muiTheme}>
+    <Layout>
+      <Grid container className="container" spacing={24}>
+        <Grid item xs={12}>
+          <div className="search-box">
+            <TextField
+              id="full-width"
+              placeholder="Søk"
+              fullWidth
+              margin="normal"
+            />
           </div>
-        </div>
-      </div>
-      <div className="row text-center">
-        <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>
-          <span className="main-category">Arv</span>
-        </div>
-        <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>
-          <span className="main-category">Barn og familie</span>
-        </div>
-        <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>
-          <span className="main-category">Bolig og hytte</span>
-        </div>
-        <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>
-          <span className="main-category">Jobb</span>
-        </div>
-        <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>
-          <span className="main-category">Naboer</span>
-        </div>
-        <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>
-          <span className="main-category">Helse</span>
-        </div>
-        <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>
-          <span className="main-category">Forsikring</span>
-        </div>
-        <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>
-          <span className="main-category">Diskriminering og mobbing</span>
-        </div>
-      </div>
-    </div>
-  </Layout>
-    </MuiThemeProvider>
+        </Grid>
+        <Grid item xs={6}>
+          <Link to="/">
+            <Card className="card-container">
+              <CardContent>
+                <Typography className="card-title" color="textSecondary">
+                  <i className="card-icons fas fa-gavel"></i>
+                </Typography>
+                <Typography className="card-text" color="textSecondary">
+                  Arv
+              </Typography>
+              </CardContent>
+            </Card>
+          </Link>
+        </Grid>
+        <Grid item xs={6}>
+          <Link to="/">
+            <Card className="card-container">
+              <CardContent>
+                <Typography className="card-title" color="textSecondary">
+                  <i className="card-icons fas fa-gavel"></i>
+                </Typography>
+                <Typography className="card-text" color="textSecondary">
+                  Barn og familie
+              </Typography>
+              </CardContent>
+            </Card>
+          </Link>
+        </Grid>
+        <Grid item xs={6}>
+          <Link to="/">
+            <Card className="card-container">
+              <CardContent>
+                <Typography className="card-title" color="textSecondary">
+                  <i className="card-icons fas fa-gavel"></i>
+                </Typography>
+                <Typography className="card-text" color="textSecondary">
+                  Bolig og hytte
+              </Typography>
+              </CardContent>
+            </Card>
+          </Link>
+        </Grid>
+        <Grid item xs={6}>
+          <Link to="/">
+            <Card className="card-container">
+              <CardContent>
+                <Typography className="card-title" color="textSecondary">
+                  <i className="card-icons fas fa-gavel"></i>
+                </Typography>
+                <Typography className="card-text" color="textSecondary">
+                  Jobb
+              </Typography>
+              </CardContent>
+            </Card>
+          </Link>
+        </Grid>
+        <Grid item xs={6}>
+          <Link to="/">
+            <Card className="card-container">
+              <CardContent>
+                <Typography className="card-title" color="textSecondary">
+                  <i className="card-icons fas fa-gavel"></i>
+                </Typography>
+                <Typography className="card-text" color="textSecondary">
+                  Naboer
+              </Typography>
+              </CardContent>
+            </Card>
+          </Link>
+        </Grid>
+        <Grid item xs={6}>
+          <Link to="/">
+            <Card className="card-container">
+              <CardContent>
+                <Typography className="card-title" color="textSecondary">
+                  <i className="card-icons fas fa-gavel"></i>
+                </Typography>
+                <Typography className="card-text" color="textSecondary">
+                  Helse
+              </Typography>
+              </CardContent>
+            </Card>
+          </Link>
+        </Grid>
+        <Grid item xs={6}>
+          <Link to="/">
+            <Card className="card-container">
+              <CardContent>
+                <Typography className="card-title" color="textSecondary">
+                  <i className="card-icons fas fa-gavel"></i>
+                </Typography>
+                <Typography className="card-text" color="textSecondary">
+                  Forsikring
+              </Typography>
+              </CardContent>
+            </Card>
+          </Link>
+        </Grid>
+        <Grid item xs={6}>
+          <Link to="/diskriminering-og-mobbing/">
+            <Card className="card-container">
+              <CardContent>
+                <Typography className="card-title" color="textSecondary">
+                  <i className="card-icons fas fa-gavel"></i>
+                </Typography>
+                <Typography className="card-text" color="textSecondary">
+                  Diskriminering og mobbing
+              </Typography>
+              </CardContent>
+            </Card>
+          </Link>
+        </Grid>
+      </Grid>
+    </Layout>
+  </MuiThemeProvider>
 )
 
 export default IndexPage
