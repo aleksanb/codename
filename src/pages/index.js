@@ -15,22 +15,36 @@ const IndexPage = () => (
       </div>
       <div className="row text-center">
         <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>Arv
+          <i className="main-icons fas fa-gavel"></i>
+          <span className="main-category">Arv</span>
         </div>
         <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>Skatt
+          <i className="main-icons fas fa-gavel"></i>
+          <span className="main-category">Barn og familie</span>
         </div>
         <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>Arv
+          <i className="main-icons fas fa-gavel"></i>
+          <span className="main-category">Bolig og hytte</span>
         </div>
         <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>Skatt
+          <i className="main-icons fas fa-gavel"></i>
+          <span className="main-category">Jobb</span>
         </div>
         <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>Arv
+          <i className="main-icons fas fa-gavel"></i>
+          <span className="main-category">Naboer</span>
         </div>
         <div className="col-xs-12 col-sm-6">
-          <i className="main-icons fas fa-gavel"></i>ƒSkatt
+          <i className="main-icons fas fa-gavel"></i>
+          <span className="main-category">Helse</span>
+        </div>
+        <div className="col-xs-12 col-sm-6">
+          <i className="main-icons fas fa-gavel"></i>
+          <span className="main-category">Forsikring</span>
+        </div>
+        <div className="col-xs-12 col-sm-6">
+          <i className="main-icons fas fa-gavel"></i>
+          <span className="main-category">Diskriminering og mobbing</span>
         </div>
       </div>
     </div>
