@@ -14,7 +14,6 @@ const Mobbing = () => (
       <Grid item xs={12}>
         <Link to="/">Hjem </Link>
       </Grid>
-      <Grid item xs={12}><img src="/LawCommunity.png" /></Grid>
       <Grid item xs={12}>
         <div className="search-box">
           <TextField
