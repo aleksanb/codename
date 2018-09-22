@@ -53,8 +53,8 @@ class DinSakPage extends React.Component {
     state = {
         taskschecked: [1,3],
         docschecked: [1],
-        tasks: ["Konsultasjon", "Rettskildesøk", "Tilbakemelding", "Oppfølgningssamtale"],
-        documents: ["Textmeldinger til og fra sjefen", "Referat av samtaler", "Liste på eventuelle vitner"],
+        tasks: ["Konsultasjon", "Korrespondanse med motparten", "Rettskildesøk", "Korrespondanse med arbeidsgiver", "Tilbakemelding", "Oppfølgningssamtale"],
+        documents: ["Tekstmeldinger til og fra sjefen", "Referat av samtaler", "Liste på eventuelle vitner"],
     };
 
     handleToggle = value => () => {
@@ -93,9 +93,9 @@ class DinSakPage extends React.Component {
                             <Paper style={style.paper}>
                                 <h2>Oppgaveliste</h2>
                                 <List>
-                                    {[0, 1, 2, 3].map(value => (
+                                    {[0, 1, 2, 3, 4, 5].map(value => (
                                         <ListItem key={value} dense button className={classes.listItem}>
-                                            <ListItemText primary={`${this.state.tasks[value + 1]}`} />
+                                            <ListItemText primary={`${this.state.tasks[value]}`} />
                                             <ListItemSecondaryAction>
                                                 <Checkbox
                                                     onChange={this.handleToggle(value)}
@@ -111,7 +111,7 @@ class DinSakPage extends React.Component {
                                 <List>
                                     {[0, 1, 2].map(value => (
                                         <ListItem key={value} dense button className={classes.listItem}>
-                                            <ListItemText primary={`${this.state.documents[value + 1]}`}/>
+                                            <ListItemText primary={`${this.state.documents[value]}`}/>
                                             <ListItemSecondaryAction>
                                                 <Checkbox
                                                     onChange={this.handleToggle(value)}
