@@ -6,9 +6,12 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import logo from "../LawCommunity.png"
 
 const IndexPage = () => (
     <Layout>
+      <Grid item xs={12}><img style={{display: 'block', margin: '20px auto 0 auto', width: '150px'}} alt="logo" src={logo} />
+      </Grid>
       <Grid container className="container" alignItems="stretch" justify="center" spacing={24}>
         <Grid item xs={12}>
           <div className="search-box">
