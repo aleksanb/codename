@@ -1,10 +1,22 @@
 import React from 'react'
 import Layout from '../components/layout'
+import 'typeface-roboto'
 import { createMuiTheme, MuiThemeProvider,} from '@material-ui/core/styles'
 
 const muiTheme = createMuiTheme({
     palette: {
-        primary1Color: '#22647D',
+        primary: {
+            light: '#757ce8',
+            main: '#3f50b5',
+            dark: '#002884',
+            contrastText: '#fff',
+        },
+        secondary: {
+            light: '#ff7961',
+            main: '#f44336',
+            dark: '#ba000d',
+            contrastText: '#000',
+        },
     },
     appBar: {
         height: 57,
