@@ -1,6 +1,5 @@
 import React from 'react'
 import Layout from '../components/layout'
-import 'typeface-roboto'
 import { createMuiTheme, MuiThemeProvider,} from '@material-ui/core/styles'
 
 const muiTheme = createMuiTheme({
