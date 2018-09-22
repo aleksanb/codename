@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Rettssamfunnet',
+    title: 'Law Community',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

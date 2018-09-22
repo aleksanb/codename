@@ -14,6 +14,7 @@ const Mobbing = () => (
       <Grid item xs={12}>
         <Link to="/">Hjem </Link>
       </Grid>
+      <Grid item xs={12}><img src="/LawCommunity.png" /></Grid>
       <Grid item xs={12}>
         <div className="search-box">
           <TextField
@@ -31,7 +32,7 @@ const Mobbing = () => (
         <Grid item xs={12}>
           <Card className="card-container">
             <Typography className="card-title" color="textSecondary">
-              <p>Sommerfest 20. juni 2018</p>
+              <p>Våre møterom er ikke tilrettelagt for rullestolbrukere</p>
             </Typography>
             <Typography className="card-text" color="textSecondary">
               <Link to="/sak/sak23485">Se beskrivelse av sak</Link>
@@ -41,7 +42,7 @@ const Mobbing = () => (
         <Grid item xs={12}>
           <Card className="card-container">
             <Typography className="card-title" color="textSecondary">
-              <p>Overgrepsfestivalen 10. mai 2000</p>
+              <p>Sønnen min fikk beskjed om at han ikke var velkommen på fotballaget</p>
             </Typography>
             <Typography className="card-text" color="textSecondary">
               <Link to="/">Se beskrivelse av sak</Link>
@@ -83,7 +84,7 @@ const Mobbing = () => (
                   </Grid>
                   <Grid item xs={10}>
                     <div><strong>Ansvarlig for Diskriminering</strong></div>
-                    <div>Navn: Donald Duck</div>
+                    <div>Navn: Peter Hauglie</div>
                     <div>Kompetanseområde: Diskriminering, Diskriminering på arbiedsplassen</div>
                   </Grid>
                 </Grid>
@@ -116,7 +117,7 @@ const Mobbing = () => (
                     <i class="fas fa-4x fa-user"></i>
                   </Grid>
                   <Grid item xs={8}>
-                    <div>Navn: Donald Duck</div>
+                    <div>Navn: Jan Berntsen</div>
                     <div>Kompetanseområde: Diskriminering</div>
                   </Grid>
                 </Grid>
@@ -149,7 +150,7 @@ const Mobbing = () => (
                     <i class="fas fa-4x fa-user"></i>
                   </Grid>
                   <Grid item xs={8}>
-                    <div>Navn: Donald Duck</div>
+                    <div>Navn: Frank Ola Nilsen</div>
                     <div>Kompetanseområde: Diskriminering på skolen/univeristet</div>
                   </Grid>
                 </Grid>
@@ -168,25 +169,6 @@ const Mobbing = () => (
               <Typography className="card-text" color="textSecondary">
                 Diverse
           </Typography>
-            </CardContent>
-          </Card>
-        </Link>
-      </Grid>
-      <Grid item xs={6} className="menu-size">
-        <Link to="/diskriminering-og-mobbing/">
-          <Card className="card-container card-lawer">
-            <CardContent>
-              <Typography className="card-text" color="textSecondary">
-                <Grid item xs={12} sm container>
-                  <Grid item xs={2}>
-                    <i class="fas fa-4x fa-user"></i>
-                  </Grid>
-                  <Grid item xs={8}>
-                    <div>Navn: Donald Duck</div>
-                    <div>Kompetanseområde: Diskriminering på arbiedsplassen</div>
-                  </Grid>
-                </Grid>
-              </Typography>
             </CardContent>
           </Card>
         </Link>

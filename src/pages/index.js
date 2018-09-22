@@ -27,7 +27,7 @@ const IndexPage = () => (
       <Grid item xs={6}>
         <Card className="card-container">
           <Typography className="card-title" color="textSecondary">
-            <p>Sommerfest 20. juni 2018</p>
+            <p>Naboen felte treet som jeg mener er på min eiendom</p>
           </Typography>
           <Typography className="card-text" color="textSecondary">
             <Link to="/sak/sak23485">Se beskrivelse av sak</Link>
@@ -37,7 +37,7 @@ const IndexPage = () => (
       <Grid item xs={6}>
         <Card className="card-container">
           <Typography className="card-title" color="textSecondary">
-            <p>Overgrepsfestivalen 10. mai 2000</p>
+            <p>Hjelp til utforming av testamente</p>
           </Typography>
           <Typography className="card-text" color="textSecondary">
             <Link to="/">Se beskrivelse av sak</Link>
@@ -152,7 +152,7 @@ const IndexPage = () => (
             <Card className="card-container">
               <CardContent>
                 <Typography className="card-title" color="textSecondary">
-                  <i className="card-icons fas fa-4x fa-gavel"></i>
+                  <i className="card-icons fas fa-4x fa-frown"></i>
                 </Typography>
                 <Typography className="card-text" color="textSecondary">
                   Diskriminering og mobbing
