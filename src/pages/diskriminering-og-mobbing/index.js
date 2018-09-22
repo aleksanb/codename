@@ -10,7 +10,7 @@ import Layout from '../../components/layout'
 
 const Mobbing = () => (
   <Layout>
-    <Grid container className="container" alignItems="stretch" justify="center" spacing={24}>
+    <Grid container className="container" spacing={24}>
       <Grid item xs={12}>
         <Link to="/">Hjem </Link>
       </Grid>
@@ -58,7 +58,7 @@ const Mobbing = () => (
         <h3>Advokater/jurister</h3>
       </Grid>
 
-      <Grid item xs={6}>
+      <Grid item xs={6} className="menu-size">
         <Link to="/diskriminering-og-mobbing/diskriminering-paa-arbiedsplassen/">
           <Card className="card-container">
             <CardContent>
@@ -72,7 +72,7 @@ const Mobbing = () => (
           </Card>
         </Link>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={6} className="menu-size">
         <Link to="/diskriminering-og-mobbing/">
           <Card className="card-container card-lawer">
             <CardContent>
@@ -92,7 +92,7 @@ const Mobbing = () => (
           </Card>
         </Link>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={6} className="menu-size">
         <Link to="/diskriminering-og-mobbing/">
           <Card className="card-container">
             <CardContent>
@@ -106,7 +106,7 @@ const Mobbing = () => (
           </Card>
         </Link>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={6} className="menu-size">
         <Link to="/diskriminering-og-mobbing/">
           <Card className="card-container card-lawer">
             <CardContent>
@@ -125,7 +125,7 @@ const Mobbing = () => (
           </Card>
         </Link>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={6} className="menu-size">
         <Link to="/diskriminering-og-mobbing/">
           <Card className="card-container">
             <CardContent>
@@ -139,7 +139,7 @@ const Mobbing = () => (
           </Card>
         </Link>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={6} className="menu-size">
         <Link to="/diskriminering-og-mobbing/">
           <Card className="card-container card-lawer">
             <CardContent>
@@ -158,7 +158,7 @@ const Mobbing = () => (
           </Card>
         </Link>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={6} className="menu-size">
         <Link to="/diskriminering-og-mobbing/">
           <Card className="card-container">
             <CardContent>
@@ -172,7 +172,7 @@ const Mobbing = () => (
           </Card>
         </Link>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={6} className="menu-size">
         <Link to="/diskriminering-og-mobbing/">
           <Card className="card-container card-lawer">
             <CardContent>

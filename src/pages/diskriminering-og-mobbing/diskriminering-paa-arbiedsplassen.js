@@ -114,9 +114,11 @@ const MobbingArbeid = () => (
       </Grid>
 
       <Grid item xs={12}>
-        <Button variant="contained" color="primary">
-          Opprett din sak
+        <Link to="/din-sak-23485-tilbudsside/">
+          <Button variant="contained" color="primary">
+            Opprett din sak
         </Button>
+        </Link>
       </Grid>
 
 
