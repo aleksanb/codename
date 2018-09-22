@@ -10,7 +10,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Checkbox from '@material-ui/core/Checkbox';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-import Avatar from '@material-ui/core/Avatar';
+import Chip from '@material-ui/core/Chip';
 
 const style = {
     button: {
@@ -26,6 +26,18 @@ const style = {
     },
     container: {
         paddingTop: '-5em',
+    },
+    chipleft: {
+        margin: '1em',
+        padding: '1em',
+    },
+    chipright: {
+        margin: '1em',
+        padding: '1em',
+        backgroundColor: '#A6A8ED',
+    },
+    div: {
+        width: '100%'
     }
 };
 
@@ -75,59 +87,71 @@ class DinSakPage extends React.Component {
                     <Grid item xs={12}>
                         <h2 style={style.title}>Prosjekt 23485</h2>
                     </Grid>
-                    <Grid item xs={12}>
-                        <Grid container className="container" justify="center" spacing={0} direction="column" style={style.container}>
-                            <Grid item xs={6}>
-                                <Grid container className="container" spacing={0} direction="row">
-                                    <Grid item xs={12}>
-                                        <Paper style={style.paper}>
-                                            <h2>Oppgaveliste</h2>
-                                            <List>
-                                                {[0, 1, 2, 3].map(value => (
-                                                    <ListItem key={value} dense button className={classes.listItem}>
-                                                        <ListItemText primary={`${this.state.tasks[value + 1]}`} />
-                                                        <ListItemSecondaryAction>
-                                                            <Checkbox
-                                                                onChange={this.handleToggle(value)}
-                                                                checked={this.state.taskschecked.indexOf(value) !== -1}
-                                                            />
-                                                        </ListItemSecondaryAction>
-                                                    </ListItem>
-                                                ))}
-                                            </List>
-                                        </Paper>
-                                        <Paper style={style.paper}>
-                                        <h2>Dokumenter</h2>
-                                        <List>
-                                            {[0, 1, 2].map(value => (
-                                                <ListItem key={value} dense button className={classes.listItem}>
-                                                    <ListItemText primary={`${this.state.documents[value + 1]}`}/>
-                                                    <ListItemSecondaryAction>
-                                                        <Checkbox
-                                                            onChange={this.handleToggle(value)}
-                                                            checked={this.state.docschecked.indexOf(value) !== -1}
-                                                        />
-                                                    </ListItemSecondaryAction>
-                                                </ListItem>
-                                            ))}
-                                        </List>
-                                        </Paper>
-                                    </Grid>
-                                </Grid>
-                            </Grid>
-                            <Grid item xs={4}>
-                                {/*<Grid container className="container" direction="row" >*/}
-                                    {/*<Paper> Chat med advokat... </Paper>*/}
-                                    {/*<Paper> Chat med advokat... </Paper>*/}
-                                    {/*<Paper> Chat med advokat... </Paper>*/}
-                                    {/*<Paper> Chat med advokat... </Paper>*/}
-                                    {/*<Paper> Chat med advokat... </Paper>*/}
-                                    {/*<Paper> Chat med advokat... </Paper>*/}
-                                    {/*<Paper> Chat med advokat... </Paper>*/}
-                                    {/*<Paper> Chat med advokat... </Paper>*/}
-                                {/*</Grid>*/}
+
+                    <Grid item xs={12} container>
+                        <Grid item xs={7}>
+                            <Paper style={style.paper}>
+                                <h2>Oppgaveliste</h2>
+                                <List>
+                                    {[0, 1, 2, 3].map(value => (
+                                        <ListItem key={value} dense button className={classes.listItem}>
+                                            <ListItemText primary={`${this.state.tasks[value + 1]}`} />
+                                            <ListItemSecondaryAction>
+                                                <Checkbox
+                                                    onChange={this.handleToggle(value)}
+                                                    checked={this.state.taskschecked.indexOf(value) !== -1}
+                                                />
+                                            </ListItemSecondaryAction>
+                                        </ListItem>
+                                    ))}
+                                </List>
+                            </Paper>
+                            <Paper style={style.paper}>
+                                <h2>Dokumenter</h2>
+                                <List>
+                                    {[0, 1, 2].map(value => (
+                                        <ListItem key={value} dense button className={classes.listItem}>
+                                            <ListItemText primary={`${this.state.documents[value + 1]}`}/>
+                                            <ListItemSecondaryAction>
+                                                <Checkbox
+                                                    onChange={this.handleToggle(value)}
+                                                    checked={this.state.docschecked.indexOf(value) !== -1}
+                                                />
+                                            </ListItemSecondaryAction>
+                                        </ListItem>
+                                    ))}
+                                </List>
+                            </Paper>
+                        </Grid>
+                        <Grid item xs={4}>
+                            <Grid container className="container" direction="row" >
+                                <h2>Din chat med Justisia</h2>
+                                <div>
+                                    <Chip style={style.chipright} label="Hei Justisia! Takk for at du tar saken min:)"/></div>
+                                <div>
+                                    <Chip style={style.chipleft} label="Hei:) Bare hyggelig, glad jeg kan hjelpe"/></div>
+                                <div>
+                                    <Chip style={style.chipleft} label="Har du mulighet til å laste opp en liste
+                                    over eventuelle vitner?"/></div>
+                                <div>
+                                    <Chip style={style.chipright} label="Ja, det kan jeg fikse!"/></div>
+                                <div style={style.div}>
+                                    <Chip style={style.chipright} label="Sånn, da er den lastet opp"/></div>
+                                <div>
+                                    <Chip style={style.chipleft} label="Supert!"/></div>
                             </Grid>
                         </Grid>
+                    </Grid>
+
+                    <Grid item xs={12}>
+                        {/*<Grid container className="container" justify="center" spacing={0} direction="column" style={style.container}>*/}
+                                <Grid item xs={6} container className="container" spacing={0} direction="row">
+                                    <Grid item xs={12}>
+
+                                    </Grid>
+                                </Grid>
+
+                        {/*</Grid>*/}
                     </Grid>
                 </Grid>
             </Layout>)
