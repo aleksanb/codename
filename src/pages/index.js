@@ -10,6 +10,7 @@ import Grid from '@material-ui/core/Grid';
 const IndexPage = () => (
   <Layout>
     <Grid container className="container" spacing={24}>
+
       <Grid item xs={12}>
         <div className="search-box">
           <TextField
@@ -20,6 +21,35 @@ const IndexPage = () => (
           />
         </div>
       </Grid>
+
+      <Grid item xs={12} style={{textAlign: 'center'}}>
+        <h3>Ferske saker</h3>
+      </Grid>
+      <Grid item xs={6}>
+        <Card className="card-container">
+          <Typography className="card-title" color="textSecondary">
+            <p>Sommerfest 20. juni 2018</p>
+          </Typography>
+          <Typography className="card-text" color="textSecondary">
+            <Link>Se beskrivelse av sak</Link>
+          </Typography>
+        </Card>
+      </Grid>
+      <Grid item xs={6}>
+        <Card className="card-container">
+          <Typography className="card-title" color="textSecondary">
+            <p>Overgrepsfestivalen 10. mai 2000</p>
+          </Typography>
+          <Typography className="card-text" color="textSecondary">
+            <Link>Se beskrivelse av sak</Link>
+          </Typography>
+        </Card>
+      </Grid>
+
+      <Grid item xs={12} style={{textAlign: 'center'}}>
+        <h3>Kategorier</h3>
+      </Grid>
+
       <Grid item xs={6}>
         <Link to="/">
           <Card className="card-container">
