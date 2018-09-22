@@ -125,14 +125,13 @@ class DinSakPage extends React.Component {
                         </Grid>
                         <Grid item xs={4}>
                             <Grid container className="container" direction="row" >
-                                <h2>Din chat med Justisia</h2>
+                                <h2>Din chat med Per</h2>
                                 <div>
-                                    <Chip style={style.chipright} label="Hei Justisia! Takk for at du tar saken min:)"/></div>
+                                    <Chip style={style.chipright} label="Hei Per! Takk for at du tar saken min:)"/></div>
                                 <div>
                                     <Chip style={style.chipleft} label="Hei:) Bare hyggelig, glad jeg kan hjelpe"/></div>
                                 <div>
-                                    <Chip style={style.chipleft} label="Har du mulighet til å laste opp en liste
-                                    over eventuelle vitner?"/></div>
+                                    <Chip style={style.chipleft} label={"Har du mulighet til å laste opp en liste over eventuelle vitner?"}/></div>
                                 <div>
                                     <Chip style={style.chipright} label="Ja, det kan jeg fikse!"/></div>
                                 <div style={style.div}>
