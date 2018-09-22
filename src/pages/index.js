@@ -9,19 +9,30 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
 const muiTheme = createMuiTheme({
-  palette: {
-    primary1Color: '#22647D',
-  },
-  appBar: {
-    height: 57,
-  },
-  drawer: {
-    width: 230,
-    color: '#1a4d60',
-  },
-  raisedButton: {
-    primaryColor: '#e64b89',
-  },
+    palette: {
+        primary: {
+            light: '#757ce8',
+            main: '#3f50b5',
+            dark: '#002884',
+            contrastText: '#fff',
+        },
+        secondary: {
+            light: '#ff7961',
+            main: '#f44336',
+            dark: '#ba000d',
+            contrastText: '#000',
+        },
+    },
+    appBar: {
+        height: 57,
+    },
+    drawer: {
+        width: 230,
+        color: '#1a4d60',
+    },
+    raisedButton: {
+        primaryColor: '#e64b89',
+    },
 });
 
 const IndexPage = () => (
