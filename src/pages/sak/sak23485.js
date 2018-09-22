@@ -37,7 +37,7 @@ const Mobbedommen = () => (
                     Denne saken ble løst av Jurist Vroldal.
                 </h3>
                 <p>
-                    Se Vrodals profil <Link>her</Link>
+                    Se Vrodals profil <Link to="/sak/sak23485">her</Link>
                 </p>
             </Grid>
         </Grid>
