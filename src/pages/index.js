@@ -1,42 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import { createMuiTheme, MuiThemeProvider, } from '@material-ui/core/styles'
 import TextField from '@material-ui/core/TextField';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
-const muiTheme = createMuiTheme({
-    palette: {
-        primary: {
-            light: '#757ce8',
-            main: '#3f50b5',
-            dark: '#002884',
-            contrastText: '#fff',
-        },
-        secondary: {
-            light: '#ff7961',
-            main: '#f44336',
-            dark: '#ba000d',
-            contrastText: '#000',
-        },
-    },
-    appBar: {
-        height: 57,
-    },
-    drawer: {
-        width: 230,
-        color: '#1a4d60',
-    },
-    raisedButton: {
-        primaryColor: '#e64b89',
-    },
-});
-
 const IndexPage = () => (
-  <MuiThemeProvider theme={muiTheme}>
     <Layout>
       <Grid container className="container" alignItems="stretch" justify="center" spacing={24}>
         <Grid item xs={12}>
@@ -49,6 +20,35 @@ const IndexPage = () => (
             />
           </div>
         </Grid>
+
+        <Grid item xs={12} style={{textAlign: 'center'}}>
+        <h3>Saksarkiv</h3>
+      </Grid>
+      <Grid item xs={6}>
+        <Card className="card-container">
+          <Typography className="card-title" color="textSecondary">
+            <p>Sommerfest 20. juni 2018</p>
+          </Typography>
+          <Typography className="card-text" color="textSecondary">
+            <Link to="/sak/sak23485">Se beskrivelse av sak</Link>
+          </Typography>
+        </Card>
+      </Grid>
+      <Grid item xs={6}>
+        <Card className="card-container">
+          <Typography className="card-title" color="textSecondary">
+            <p>Overgrepsfestivalen 10. mai 2000</p>
+          </Typography>
+          <Typography className="card-text" color="textSecondary">
+            <Link to="/">Se beskrivelse av sak</Link>
+          </Typography>
+        </Card>
+      </Grid>
+
+      <Grid item xs={12} style={{textAlign: 'center'}}>
+        <h3>Kategorier</h3>
+      </Grid>
+
         <Grid item xs={6}>
           <Link to="/">
             <Card className="card-container">
@@ -157,13 +157,12 @@ const IndexPage = () => (
                 <Typography className="card-text" color="textSecondary">
                   Diskriminering og mobbing
               </Typography>
-              </CardContent>
-            </Card>
-          </Link>
-        </Grid>
+            </CardContent>
+          </Card>
+        </Link>
       </Grid>
-    </Layout>
-  </MuiThemeProvider>
+    </Grid>
+  </Layout>
 )
 
 export default IndexPage

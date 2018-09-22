@@ -6,11 +6,14 @@ import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
 
 const Mobbing = () => (
   <Layout>
     <Grid container className="container" alignItems="stretch" justify="center" spacing={24}>
+      <Grid item xs={12}>
+        <Link to="/">Hjem </Link>
+      </Grid>
       <Grid item xs={12}>
         <div className="search-box">
           <TextField
@@ -20,9 +23,43 @@ const Mobbing = () => (
             margin="normal"
           />
         </div>
+
+        <Grid item xs={12} style={{ textAlign: 'center' }}>
+          <h3>Saksarkiv</h3>
+        </Grid>
+
+        <Grid item xs={12}>
+          <Card className="card-container">
+            <Typography className="card-title" color="textSecondary">
+              <p>Sommerfest 20. juni 2018</p>
+            </Typography>
+            <Typography className="card-text" color="textSecondary">
+              <Link to="/sak/sak23485">Se beskrivelse av sak</Link>
+            </Typography>
+          </Card>
+        </Grid>
+        <Grid item xs={12}>
+          <Card className="card-container">
+            <Typography className="card-title" color="textSecondary">
+              <p>Overgrepsfestivalen 10. mai 2000</p>
+            </Typography>
+            <Typography className="card-text" color="textSecondary">
+              <Link to="/">Se beskrivelse av sak</Link>
+            </Typography>
+          </Card>
+        </Grid>
       </Grid>
+
+      <Grid item xs={6} style={{ textAlign: 'center' }}>
+        <h3>Kategorier</h3>
+      </Grid>
+
+      <Grid item xs={6} style={{ textAlign: 'center' }}>
+        <h3>Advokater/jurister</h3>
+      </Grid>
+
       <Grid item xs={6}>
-        <Link to="/sak/mobbedommen/">
+        <Link to="/diskriminering-og-mobbing/diskriminering-paa-arbiedsplassen/">
           <Card className="card-container">
             <CardContent>
               <Typography className="card-title" color="textSecondary">
@@ -30,7 +67,7 @@ const Mobbing = () => (
               </Typography>
               <Typography className="card-text" color="textSecondary">
                 Diskriminering på arbiedsplassen
-          </Typography>
+              </Typography>
             </CardContent>
           </Card>
         </Link>
@@ -45,6 +82,7 @@ const Mobbing = () => (
                     <i class="fas fa-4x fa-user"></i>
                   </Grid>
                   <Grid item xs={10}>
+                    <div><strong>Ansvarlig for Diskriminering</strong></div>
                     <div>Navn: Donald Duck</div>
                     <div>Kompetanseområde: Diskriminering, Diskriminering på arbiedsplassen</div>
                   </Grid>
