@@ -63,7 +63,7 @@ const Mobbing = () => (
           <Card className="card-container">
             <CardContent>
               <Typography className="card-title" color="textSecondary">
-                <i className="card-icons fas fa-4x fa-gavel"></i>
+                <i className="card-icons fas fa-4x fa-building"></i>
               </Typography>
               <Typography className="card-text" color="textSecondary">
                 Diskriminering på arbiedsplassen
@@ -130,7 +130,7 @@ const Mobbing = () => (
           <Card className="card-container">
             <CardContent>
               <Typography className="card-title" color="textSecondary">
-                <i className="card-icons fas fa-4x fa-gavel"></i>
+                <i className="card-icons fas fa-4x fa-building"></i>
               </Typography>
               <Typography className="card-text" color="textSecondary">
                 Mobbing på arbiedsplassen

@@ -17,7 +17,7 @@ import Layout from '../../components/layout'
 
 const MobbingArbeid = () => (
   <Layout>
-    <Grid container className="container" alignItems="stretch" justify="center" spacing={24}>
+    <Grid container className="container" alignItems="stretch" justify="center" spacing={12}>
       <Grid item xs={12}>
         <Link to="/">Hjem </Link>
         <i class="fas fa-arrow-right"></i>
@@ -28,12 +28,12 @@ const MobbingArbeid = () => (
         <h3>Bestillingsskjema</h3>
       </Grid>
 
-      <Grid item xs={10} container>
+      <Grid item xs={9} container>
         <Grid item xs={12}>
-          <h3>Fyll ut: </h3>
+          <h4>Fyll ut om hendlesen </h4>
         </Grid>
 
-        <Grid item xs={12} container>
+        <Grid item xs={12} container className="form-input">
           <Grid item xs={2}>
             <InputLabel htmlFor="problem">Problemområde</InputLabel>
           </Grid>
@@ -51,7 +51,7 @@ const MobbingArbeid = () => (
           </Grid>
         </Grid>
 
-        <Grid item xs={12} container>
+        <Grid item xs={12} container className="form-input">
           <Grid item xs={2}>
             <InputLabel htmlFor="sakstype">Sakstype</InputLabel>
           </Grid>
@@ -69,7 +69,7 @@ const MobbingArbeid = () => (
           </Grid>
         </Grid>
 
-        <Grid item xs={12} sm container>
+        <Grid item xs={12} sm container className="form-input">
           <Grid item xs={2}>
             <InputLabel htmlFor="problem">Kostnadsramme</InputLabel>
           </Grid>
@@ -78,8 +78,8 @@ const MobbingArbeid = () => (
         </Grid>
         </Grid>
 
-        <Grid item xs={12} container>
-          <Grid item xs={12}>
+        <Grid item xs={12} container className="form-input">
+          <Grid item xs={12} className="decribe-input">
             <InputLabel htmlFor="problem">Problembeskrivelse/hendlesen</InputLabel>
           </Grid>
           <Grid item xs={10}>
@@ -94,9 +94,9 @@ const MobbingArbeid = () => (
         </Grid>
       </Grid>
 
-      <Grid item xs={2} container>
+      <Grid item xs={3} container>
         <Grid item xs={12}>
-          <h3>Advokat/jurist valg</h3>
+          <h4>Valg av advokat/jurist</h4>
         </Grid>
 
         <Grid item xs={12}>
