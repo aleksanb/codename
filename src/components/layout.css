@@ -8,10 +8,11 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:hover {
-  color: black !important;
+  color: cornflowerblue !important;
   text-decoration: none;
 }
 

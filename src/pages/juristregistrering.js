@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import { Paper, Button, TextField, Grid, Avatar } from '@material-ui/core'
+import { Paper, Button, TextField, Grid } from '@material-ui/core'
 
 const style = {
     button: {
@@ -26,6 +27,11 @@ class JuristRegistreringPAge extends React.Component {
         return (
             <Layout>
                 <Grid container className="container" justify="center" spacing={24}>
+                    <Grid item xs={12}>
+                        <Link to="/">Hjem </Link>
+                        <i class="fas fa-arrow-right"></i>
+                        <Link to="/juristregistrering/"> Juristregistrering </Link>
+                    </Grid>
                     <Paper className="register-jurist-paper">
                         <h1>Meld deg inn som jurist <i className="fas fa-gavel"></i></h1>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import { Paper, Button, Grid, Chip, Avatar } from '@material-ui/core'
 
@@ -22,8 +23,13 @@ class DinSakPage extends React.Component {
         return (
             <Layout>
                 <Grid container className="container" justify="center" spacing={24}>
+                    <Grid item xs={12}>
+                        <Link to="/">Hjem </Link>
+                        <i class="fas fa-arrow-right"></i>
+                        <Link to="/din-sak-23485/"> Din sak 23485</Link>
+                    </Grid>
                     <Grid alignItems="center" justify="center" item xs={6}>
-                        <h2 style={style.title}>Din sak</h2>
+                        <h2 style={style.title}>Din sak 23485</h2>
                         <Paper style={style.paper}>
                             <h2>Sommerfest 20. juni 2018</h2>
                             <p>
