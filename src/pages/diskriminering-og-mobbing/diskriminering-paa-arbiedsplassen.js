@@ -9,6 +9,9 @@ import InputLabel from '@material-ui/core/InputLabel';
 import Select from '@material-ui/core/Select';
 import MenuItem from '@material-ui/core/MenuItem';
 import Button from '@material-ui/core/Button';
+import Radio from '@material-ui/core/Radio';
+import RadioGroup from '@material-ui/core/RadioGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
 
 import Layout from '../../components/layout'
 
@@ -21,80 +24,93 @@ const MobbingArbeid = () => (
         <Link to="/diskriminering-og-mobbing/"> Diskriminering og mobbing </Link>
       </Grid>
 
-      <Grid item xs={12}>
-        <div className="search-box">
-          <TextField
-            id="full-width"
-            placeholder="Søk"
-            fullWidth
-            margin="normal"
-          />
-        </div>
-      </Grid>
-
       <Grid item xs={12} style={{ textAlign: 'center' }}>
         <h3>Bestillingsskjema</h3>
       </Grid>
 
-      <Grid item xs={12} container>
-        <Grid item xs={2}>
-          <InputLabel htmlFor="problem">Problemområde  </InputLabel>
-        </Grid>
-        <Grid item xs={10}>
-          <Select
-            value={10}
-            inputProps={{
-              name: 'problemområde',
-              id: 'problem',
-            }}
-          >
-            <MenuItem value={10}>Diskriminering på arbiedsplassen</MenuItem>
-            <MenuItem value={20}>Diskriminering på skolen/universitetet</MenuItem>
-          </Select>
-        </Grid>
-      </Grid>
-
-      <Grid item xs={12} container>
-        <Grid item xs={2}>
-          <InputLabel htmlFor="sakstype">Sakstype  </InputLabel>
-        </Grid>
-        <Grid item xs={10}>
-          <Select
-            value={10}
-            inputProps={{
-              name: 'sakstype',
-              id: 'sakstype',
-            }}
-          >
-            <MenuItem value={10}>Rådgivning</MenuItem>
-            <MenuItem value={20}>Nytt prosjekt</MenuItem>
-          </Select>
-        </Grid>
-      </Grid>
-
-      <Grid item xs={12} sm container>
-        <Grid item xs={2}>
-          <InputLabel htmlFor="problem">Kostnadsramme  </InputLabel>
-        </Grid>
-        <Grid item xs={10}>
-          1000 - 10000
-        </Grid>
-      </Grid>
-
-      <Grid item xs={12} container>
+      <Grid item xs={10} container>
         <Grid item xs={12}>
-          <InputLabel htmlFor="problem">Problembeskrivelse/hendlesen  </InputLabel>
+          <h3>Fyll ut: </h3>
         </Grid>
+
+        <Grid item xs={12} container>
+          <Grid item xs={2}>
+            <InputLabel htmlFor="problem">Problemområde</InputLabel>
+          </Grid>
+          <Grid item xs={6}>
+            <Select
+              value={10}
+              inputProps={{
+                name: 'problemområde',
+                id: 'problem',
+              }}
+            >
+              <MenuItem value={10}>Diskriminering på arbiedsplassen</MenuItem>
+              <MenuItem value={20}>Diskriminering på skolen/universitetet</MenuItem>
+            </Select>
+          </Grid>
+        </Grid>
+
+        <Grid item xs={12} container>
+          <Grid item xs={2}>
+            <InputLabel htmlFor="sakstype">Sakstype</InputLabel>
+          </Grid>
+          <Grid item xs={10}>
+            <Select
+              value={10}
+              inputProps={{
+                name: 'sakstype',
+                id: 'sakstype',
+              }}
+            >
+              <MenuItem value={10}>Rådgivning</MenuItem>
+              <MenuItem value={20}>Nytt prosjekt</MenuItem>
+            </Select>
+          </Grid>
+        </Grid>
+
+        <Grid item xs={12} sm container>
+          <Grid item xs={2}>
+            <InputLabel htmlFor="problem">Kostnadsramme</InputLabel>
+          </Grid>
+          <Grid item xs={10}>
+            1000 - 10000
+        </Grid>
+        </Grid>
+
+        <Grid item xs={12} container>
+          <Grid item xs={12}>
+            <InputLabel htmlFor="problem">Problembeskrivelse/hendlesen</InputLabel>
+          </Grid>
+          <Grid item xs={10}>
+            <TextField
+              id="multiline-flexible"
+              multiline
+              fullWidth
+              value="En ansatt og hans sjef møtes på sommerens firmafest. De har det hyggelig og tafser smått på hverandre. Den ansatte forteller så at han skal hjem til hans mann, og ikke ønsker å være mer på festen. Sjefen sier så at den ansatte ikke vil bli tatt opp som seniorpartner hvis han avviser hennes proposisjon.Saken ble tatt opp for forliksrådet, og den ansatte ble tilkjent hundre milliarder kroner i erstatning. Saken ble avsluttet med 1 ukes arbeid."
+              margin="normal"
+            />
+          </Grid>
+        </Grid>
+      </Grid>
+
+      <Grid item xs={2} container>
         <Grid item xs={12}>
-          <TextField
-            id="multiline-flexible"
-            multiline
-            rowsMax="4"
-            fullWidth
-            value="En ansatt og hans sjef møtes på sommerens firmafest. De har det hyggelig og tafser smått på hverandre. Den ansatte forteller så at han skal hjem til hans mann, og ikke ønsker å være mer på festen. Sjefen sier så at den ansatte ikke vil bli tatt opp som seniorpartner hvis han avviser hennes proposisjon.Saken ble tatt opp for forliksrådet, og den ansatte ble tilkjent hundre milliarder kroner i erstatning. Saken ble avsluttet med 1 ukes arbeid."
-            margin="normal"
-          />
+          <h3>Advokat/jurist valg</h3>
         </Grid>
+
+        <Grid item xs={12}>
+          <RadioGroup
+            name="advokater"
+            value="all"
+          >
+            <FormControlLabel value="spesial" control={<Radio />} label="En spesiell jurist" />
+            <FormControlLabel value="chosen" control={<Radio />} label="Mine utvalgte jurister" />
+            <FormControlLabel value="criteria" control={<Radio />} label="Mine kriterier" />
+            <FormControlLabel value="all" control={<Radio />} label="Alle" />
+          </RadioGroup>
+        </Grid>
+
       </Grid>
 
       <Grid item xs={12}>
