@@ -10,7 +10,7 @@ import Layout from '../components/layout'
 
 const Mobbing = () => (
   <Layout>
-    <Grid container className="container" spacing={24}>
+    <Grid container className="container" alignItems="stretch" justify="center" spacing={24}>
       <Grid item xs={12}>
         <div className="search-box">
           <TextField
@@ -22,99 +22,34 @@ const Mobbing = () => (
         </div>
       </Grid>
       <Grid item xs={6}>
-        <Link to="/">
+        <Link to="/sak/mobbedommen/">
           <Card className="card-container">
             <CardContent>
               <Typography className="card-title" color="textSecondary">
-                <i className="card-icons fas fa-gavel"></i>
+                <i className="card-icons fas fa-4x fa-gavel"></i>
               </Typography>
               <Typography className="card-text" color="textSecondary">
-                Arv
+                Diskriminering på arbiedsplassen
           </Typography>
             </CardContent>
           </Card>
         </Link>
       </Grid>
       <Grid item xs={6}>
-        <Link to="/">
-          <Card className="card-container">
+        <Link to="/diskriminering-og-mobbing/">
+          <Card className="card-container card-lawer">
             <CardContent>
-              <Typography className="card-title" color="textSecondary">
-                <i className="card-icons fas fa-gavel"></i>
-              </Typography>
               <Typography className="card-text" color="textSecondary">
-                Barn og familie
-          </Typography>
-            </CardContent>
-          </Card>
-        </Link>
-      </Grid>
-      <Grid item xs={6}>
-        <Link to="/">
-          <Card className="card-container">
-            <CardContent>
-              <Typography className="card-title" color="textSecondary">
-                <i className="card-icons fas fa-gavel"></i>
+                <Grid item xs={12} sm container>
+                  <Grid item xs={2}>
+                    <i class="fas fa-4x fa-user"></i>
+                  </Grid>
+                  <Grid item xs={10}>
+                    <div>Navn: Donald Duck</div>
+                    <div>Kompetanseområde: Diskriminering, Diskriminering på arbiedsplassen</div>
+                  </Grid>
+                </Grid>
               </Typography>
-              <Typography className="card-text" color="textSecondary">
-                Bolig og hytte
-          </Typography>
-            </CardContent>
-          </Card>
-        </Link>
-      </Grid>
-      <Grid item xs={6}>
-        <Link to="/">
-          <Card className="card-container">
-            <CardContent>
-              <Typography className="card-title" color="textSecondary">
-                <i className="card-icons fas fa-gavel"></i>
-              </Typography>
-              <Typography className="card-text" color="textSecondary">
-                Jobb
-          </Typography>
-            </CardContent>
-          </Card>
-        </Link>
-      </Grid>
-      <Grid item xs={6}>
-        <Link to="/">
-          <Card className="card-container">
-            <CardContent>
-              <Typography className="card-title" color="textSecondary">
-                <i className="card-icons fas fa-gavel"></i>
-              </Typography>
-              <Typography className="card-text" color="textSecondary">
-                Naboer
-          </Typography>
-            </CardContent>
-          </Card>
-        </Link>
-      </Grid>
-      <Grid item xs={6}>
-        <Link to="/">
-          <Card className="card-container">
-            <CardContent>
-              <Typography className="card-title" color="textSecondary">
-                <i className="card-icons fas fa-gavel"></i>
-              </Typography>
-              <Typography className="card-text" color="textSecondary">
-                Helse
-          </Typography>
-            </CardContent>
-          </Card>
-        </Link>
-      </Grid>
-      <Grid item xs={6}>
-        <Link to="/">
-          <Card className="card-container">
-            <CardContent>
-              <Typography className="card-title" color="textSecondary">
-                <i className="card-icons fas fa-gavel"></i>
-              </Typography>
-              <Typography className="card-text" color="textSecondary">
-                Forsikring
-          </Typography>
             </CardContent>
           </Card>
         </Link>
@@ -124,11 +59,96 @@ const Mobbing = () => (
           <Card className="card-container">
             <CardContent>
               <Typography className="card-title" color="textSecondary">
-                <i className="card-icons fas fa-gavel"></i>
+                <i className="card-icons fas fa-4x fa-user-graduate"></i>
               </Typography>
               <Typography className="card-text" color="textSecondary">
-                Diskriminering og mobbing
+                Diskriminering på skolen/univeristet
           </Typography>
+            </CardContent>
+          </Card>
+        </Link>
+      </Grid>
+      <Grid item xs={6}>
+        <Link to="/diskriminering-og-mobbing/">
+          <Card className="card-container card-lawer">
+            <CardContent>
+              <Typography className="card-text" color="textSecondary">
+                <Grid item xs={12} sm container>
+                  <Grid item xs={2}>
+                    <i class="fas fa-4x fa-user"></i>
+                  </Grid>
+                  <Grid item xs={8}>
+                    <div>Navn: Donald Duck</div>
+                    <div>Kompetanseområde: Diskriminering</div>
+                  </Grid>
+                </Grid>
+              </Typography>
+            </CardContent>
+          </Card>
+        </Link>
+      </Grid>
+      <Grid item xs={6}>
+        <Link to="/diskriminering-og-mobbing/">
+          <Card className="card-container">
+            <CardContent>
+              <Typography className="card-title" color="textSecondary">
+                <i className="card-icons fas fa-4x fa-gavel"></i>
+              </Typography>
+              <Typography className="card-text" color="textSecondary">
+                Mobbing på arbiedsplassen
+          </Typography>
+            </CardContent>
+          </Card>
+        </Link>
+      </Grid>
+      <Grid item xs={6}>
+        <Link to="/diskriminering-og-mobbing/">
+          <Card className="card-container card-lawer">
+            <CardContent>
+              <Typography className="card-text" color="textSecondary">
+                <Grid item xs={12} sm container>
+                  <Grid item xs={2}>
+                    <i class="fas fa-4x fa-user"></i>
+                  </Grid>
+                  <Grid item xs={8}>
+                    <div>Navn: Donald Duck</div>
+                    <div>Kompetanseområde: Diskriminering på skolen/univeristet</div>
+                  </Grid>
+                </Grid>
+              </Typography>
+            </CardContent>
+          </Card>
+        </Link>
+      </Grid>
+      <Grid item xs={6}>
+        <Link to="/diskriminering-og-mobbing/">
+          <Card className="card-container">
+            <CardContent>
+              <Typography className="card-title" color="textSecondary">
+                <i className="card-icons fas fa-4x fa-comments"></i>
+              </Typography>
+              <Typography className="card-text" color="textSecondary">
+                Diverse
+          </Typography>
+            </CardContent>
+          </Card>
+        </Link>
+      </Grid>
+      <Grid item xs={6}>
+        <Link to="/diskriminering-og-mobbing/">
+          <Card className="card-container card-lawer">
+            <CardContent>
+              <Typography className="card-text" color="textSecondary">
+                <Grid item xs={12} sm container>
+                  <Grid item xs={2}>
+                    <i class="fas fa-4x fa-user"></i>
+                  </Grid>
+                  <Grid item xs={8}>
+                    <div>Navn: Donald Duck</div>
+                    <div>Kompetanseområde: Diskriminering på arbiedsplassen</div>
+                  </Grid>
+                </Grid>
+              </Typography>
             </CardContent>
           </Card>
         </Link>

@@ -38,7 +38,7 @@ const muiTheme = createMuiTheme({
 const IndexPage = () => (
   <MuiThemeProvider theme={muiTheme}>
     <Layout>
-      <Grid container className="container" spacing={24}>
+      <Grid container className="container" alignItems="stretch" justify="center" spacing={24}>
         <Grid item xs={12}>
           <div className="search-box">
             <TextField
@@ -54,7 +54,7 @@ const IndexPage = () => (
             <Card className="card-container">
               <CardContent>
                 <Typography className="card-title" color="textSecondary">
-                  <i className="card-icons fas fa-gavel"></i>
+                  <i className="card-icons fas fa-4x fa-hand-holding-usd"></i>
                 </Typography>
                 <Typography className="card-text" color="textSecondary">
                   Arv
@@ -68,7 +68,7 @@ const IndexPage = () => (
             <Card className="card-container">
               <CardContent>
                 <Typography className="card-title" color="textSecondary">
-                  <i className="card-icons fas fa-gavel"></i>
+                  <i className="card-icons fas fa-4x fa-child"></i>
                 </Typography>
                 <Typography className="card-text" color="textSecondary">
                   Barn og familie
@@ -82,7 +82,7 @@ const IndexPage = () => (
             <Card className="card-container">
               <CardContent>
                 <Typography className="card-title" color="textSecondary">
-                  <i className="card-icons fas fa-gavel"></i>
+                  <i className="card-icons fas fa-4x fa-home"></i>
                 </Typography>
                 <Typography className="card-text" color="textSecondary">
                   Bolig og hytte
@@ -96,7 +96,7 @@ const IndexPage = () => (
             <Card className="card-container">
               <CardContent>
                 <Typography className="card-title" color="textSecondary">
-                  <i className="card-icons fas fa-gavel"></i>
+                  <i className="card-icons fas fa-4x fa-briefcase"></i>
                 </Typography>
                 <Typography className="card-text" color="textSecondary">
                   Jobb
@@ -110,7 +110,7 @@ const IndexPage = () => (
             <Card className="card-container">
               <CardContent>
                 <Typography className="card-title" color="textSecondary">
-                  <i className="card-icons fas fa-gavel"></i>
+                  <i className="card-icons fas fa-4x fa-user-friends"></i>
                 </Typography>
                 <Typography className="card-text" color="textSecondary">
                   Naboer
@@ -124,7 +124,7 @@ const IndexPage = () => (
             <Card className="card-container">
               <CardContent>
                 <Typography className="card-title" color="textSecondary">
-                  <i className="card-icons fas fa-gavel"></i>
+                  <i className="card-icons fas fa-4x fa-heartbeat"></i>
                 </Typography>
                 <Typography className="card-text" color="textSecondary">
                   Helse
@@ -138,7 +138,7 @@ const IndexPage = () => (
             <Card className="card-container">
               <CardContent>
                 <Typography className="card-title" color="textSecondary">
-                  <i className="card-icons fas fa-gavel"></i>
+                  <i className="card-icons fas fa-4x fa-file-invoice-dollar"></i>
                 </Typography>
                 <Typography className="card-text" color="textSecondary">
                   Forsikring
@@ -152,7 +152,7 @@ const IndexPage = () => (
             <Card className="card-container">
               <CardContent>
                 <Typography className="card-title" color="textSecondary">
-                  <i className="card-icons fas fa-gavel"></i>
+                  <i className="card-icons fas fa-4x fa-gavel"></i>
                 </Typography>
                 <Typography className="card-text" color="textSecondary">
                   Diskriminering og mobbing
