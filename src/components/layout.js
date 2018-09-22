@@ -5,8 +5,7 @@ import 'typeface-roboto'
 import { StaticQuery, graphql, Link } from 'gatsby'
 import { AppBar, Toolbar, Typography } from '@material-ui/core'
 import CssBaseline from '@material-ui/core/CssBaseline';
-
-import './layout.css'
+import './layout.css';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -32,9 +31,8 @@ const Layout = ({ children }) => (
             <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
                   integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
                   crossOrigin="anonymous"></link>
-
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"></link>
             <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></link>
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></link>
             <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
        </Helmet>
           <AppBar position="static">
