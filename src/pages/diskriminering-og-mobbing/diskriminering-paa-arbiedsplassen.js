@@ -129,7 +129,7 @@ const MobbingArbeid = () => (
       <Grid item xs={12}>
         <Card className="card-container">
           <Typography className="card-title" color="textSecondary">
-            <p>Våre møterom er ikke tilrettelagt for rullestolbrukere</p>
+            <p>Tilretteleggelse for rullestolbrukere</p>
           </Typography>
           <Typography className="card-text" color="textSecondary">
             <Link to="/sak/sak23485">Se beskrivelse av sak</Link>
@@ -139,7 +139,7 @@ const MobbingArbeid = () => (
       <Grid item xs={12}>
         <Card className="card-container">
           <Typography className="card-title" color="textSecondary">
-            <p>Mannen fikk jobben</p>
+            <p>Kjønnsdiskriminering ved ansettelse</p>
           </Typography>
           <Typography className="card-text" color="textSecondary">
             <Link to="/">Se beskrivelse av sak</Link>
